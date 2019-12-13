@@ -2,6 +2,7 @@
 
 
 Não consegui desenvolver tudo que foi pedido , porém tentei meu  máximo .-. 
+
 Caso dê algum problema na db você pode alterá-la em appsettings.json na parte de "ConnectionStrings"
 
 
