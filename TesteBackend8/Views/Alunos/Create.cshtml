@@ -1,6 +1,6 @@
 ﻿@model TesteBackend8.Models.ViewModels.AlunoFormViewModel
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Cadastrar Novo Aluno";
 }
 
 <h2>@ViewData["Title"]</h2>
@@ -35,10 +35,10 @@
             </div>
             <div class="form-group">
                 <label asp-for="Aluno.TurmaId" class="control-label"></label>
-                <select asp-for="Aluno.TurmaId" asp-items="@(new SelectList(Model.Turmas,"Id","Nome"))" class="form-control"></select>
+                <select asp-for="Aluno.TurmaId" asp-items="@(new SelectList(Model.Turmas,"Id","Nome"))" class="form-control "></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Cadastrar" class="btn btn-success" />
             </div>
         </form>
     </div>

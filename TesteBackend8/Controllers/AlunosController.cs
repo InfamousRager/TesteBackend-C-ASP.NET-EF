@@ -110,7 +110,7 @@ namespace TesteBackend8.Controllers
 
         [HttpPost]
         [AutoValidateAntiforgeryToken]
-        public async Task<IActionResult> EditAsync(int id,Aluno aluno)
+        public async Task<IActionResult> Edit(int id,Aluno aluno)
         {
             if (!ModelState.IsValid)
             {

@@ -53,7 +53,7 @@ namespace TesteBackend8.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,nome")] Turma turma)
+        public async Task<IActionResult> Create([Bind("Id,Nome")] Turma turma)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace TesteBackend8.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,nome")] Turma turma)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome")] Turma turma)
         {
             if (id != turma.Id)
             {

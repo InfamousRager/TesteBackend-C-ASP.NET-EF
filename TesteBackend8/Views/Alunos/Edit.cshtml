@@ -1,6 +1,6 @@
 ﻿@model TesteBackend8.Models.ViewModels.AlunoFormViewModel
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar";
 }
 
 <h2>@ViewData["Title"]</h2>
@@ -11,7 +11,7 @@
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
-            <input type="hidden" asp-for="Aluno.Id"/>
+            <input type="hidden" asp-for="Aluno.Id" />
             <div class="form-group">
                 <label asp-for="Aluno.Nome" class="control-label"></label>
                 <input asp-for="Aluno.Nome" class="form-control" />
@@ -37,7 +37,9 @@
                 <select asp-for="Aluno.TurmaId" asp-items="@(new SelectList(Model.Turmas,"Id","Nome"))" class="form-control"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Salvar" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-primary">Voltar</a>
+
             </div>
         </form>
     </div>

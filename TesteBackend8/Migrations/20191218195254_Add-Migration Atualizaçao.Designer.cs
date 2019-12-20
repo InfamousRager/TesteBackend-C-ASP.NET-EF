@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TesteBackend8.Models;
 
 namespace TesteBackend8.Migrations
 {
     [DbContext(typeof(TesteBackend8Context))]
-    partial class TesteBackend8ContextModelSnapshot : ModelSnapshot
+    [Migration("20191218195254_Add-Migration Atualizaçao")]
+    partial class AddMigrationAtualizaçao
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,8 +23,6 @@ namespace TesteBackend8.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
-
-                    b.Property<double>("Media");
 
                     b.Property<string>("Nome")
                         .IsRequired()
